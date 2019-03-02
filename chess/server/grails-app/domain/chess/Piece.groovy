@@ -1,4 +1,7 @@
 package chess
+import java.lang.String
+import java.lang.Object
+
 interface IPiece {
   // returns the string representation of this piece
   public String makeString()
