@@ -1,8 +1,13 @@
 
 public class Bishop extends APiece {
 
-  Bishop(int x, int y, boolean isWhite) {
-    super(x, y, isWhite, 'B');
+  Bishop(boolean isWhite) {
+    super(isWhite, 'B');
+  }
+
+  // returns if this bishop can move to the given coordinates legally
+  public boolean isLegalMove(int x, int y, int toX, int toY, Board board) {
+    return true;
   }
 
 }

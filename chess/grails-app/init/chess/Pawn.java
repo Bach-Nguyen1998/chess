@@ -1,8 +1,13 @@
 
 public class Pawn extends APiece {
 
-  Pawn(int x, int y, boolean isWhite) {
-    super(x, y, isWhite, 'P');
+  Pawn(boolean isWhite) {
+    super(isWhite, 'P');
+  }
+
+  // returns if this pawn can move to the given coordinates legally
+  public boolean isLegalMove(int x, int y, int toX, int toY, Board board) {
+    return true;
   }
 
 }

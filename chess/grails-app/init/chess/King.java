@@ -1,8 +1,13 @@
 
 public class King extends APiece {
 
-  King(int x, int y, boolean isWhite) {
-    super(x, y, isWhite, 'K');
+  King(boolean isWhite) {
+    super(isWhite, 'K');
+  }
+
+  // returns if this king can move to the given coordinates legally
+  public boolean isLegalMove(int x, int y, int toX, int toY, Board board) {
+    return true;
   }
 
 }

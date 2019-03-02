@@ -1,8 +1,13 @@
 
 public class Rook extends APiece {
 
-  Rook(int x, int y, boolean isWhite) {
-    super(x, y, isWhite, 'R');
+  Rook(boolean isWhite) {
+    super(isWhite, 'R');
   }
 
+  // returns if this rook can move to the given coordinates legally
+  public boolean isLegalMove(int x, int y, int toX, int toY, Board board) {
+    return true;
+  }
+  
 }

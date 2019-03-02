@@ -1,8 +1,13 @@
 
 public class Knight extends APiece {
 
-  Knight(int x, int y, boolean isWhite) {
-    super(x, y, isWhite, 'N');
+  Knight(boolean isWhite) {
+    super(isWhite, 'N');
+  }
+
+  // returns if this knight can move to the given coordinates legally
+  public boolean isLegalMove(int x, int y, int toX, int toY, Board board) {
+    return true;
   }
 
 }
