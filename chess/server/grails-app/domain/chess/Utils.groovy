@@ -4,7 +4,7 @@ class Utils {
  // returns the piece, for the given coordinates, at the start of the game
   public IPiece getStartingPiece(int x, int y) {
     if (y > 1 && y < 6) {         // generate empty squares
-      return new NoPiece();
+      return NoPiece.newInstance();
     }
     else if (y == 1 || y == 6) {  // generate pawns
       return new Pawn(y == 1);

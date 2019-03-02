@@ -1,6 +1,5 @@
 package chess
 
-@Resource(uri ='/move')
 class Move {
   private int fromX;
   private int fromY;

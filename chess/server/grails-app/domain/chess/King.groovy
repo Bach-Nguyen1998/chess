@@ -1,6 +1,5 @@
 package chess
 
-@Resource(uri = '/king')
 class King extends APiece{
   King(boolean isWhite) {
     super(isWhite, 'K');

@@ -1,9 +1,7 @@
 package chess
-import tester.Tester;
 import java.util.ArrayList;
 
 //  represents the board on which Chess is played
-@Resource(uri ='/board')
 class Board {
   final int BOARD_WIDTH = 8;
   ArrayList<ArrayList<Square>> board;
@@ -32,7 +30,7 @@ class Board {
     Square toSquare = board.get(m.getToX()).get(m.getToY());
     if (fromSquare.isLegalMove(m.getToX(), m.getToY(), this)) { // checks if the move is legal
       toSquare.setPiece(fromSquare.piece);                      // sets the piece to its new square
-      fromSquare.setPiece(new NoPiece());                       // sets the old square to no piece
+      fromSquare.setPiece(NoPiece.newInstance());                       // sets the old square to no piece
     }
   }
 
@@ -54,7 +52,7 @@ class Board {
 }
 
 // TODO: move this to the seperate unit test class
-class ExamplesBoard {
+/*class ExamplesBoard {
 
   Board b;
   Move m1, m2, m3, m4, m5, m6;
@@ -80,5 +78,5 @@ class ExamplesBoard {
     System.out.println(b);
   }
 }
-
+*/
 

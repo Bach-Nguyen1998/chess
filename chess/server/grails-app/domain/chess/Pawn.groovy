@@ -1,6 +1,5 @@
 package chess
 
-@Resource(uri = '/pawn')
 class Pawn extends APiece {
 
   Pawn(boolean isWhite) {
