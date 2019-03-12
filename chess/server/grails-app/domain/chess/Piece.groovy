@@ -1,13 +1,11 @@
 package chess
-import java.lang.String
-import java.lang.Object
 
 interface IPiece {
   // returns the string representation of this piece
-  public String makeString()
+  public String makeString();
 
   // returns if moving this piece to the given square, on the given board, is legal
-  public boolean isLegalMove(int x, int y, int toX, int toY, Board board)
+  public boolean isLegalMove(int x, int y, int toX, int toY, Board board);
 }
 
 
@@ -31,4 +29,3 @@ abstract class APiece implements IPiece {
     return ((isWhite) ? "W" : "B") + this.name;
   }
 }
-
